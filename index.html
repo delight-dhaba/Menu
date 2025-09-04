@@ -115,23 +115,10 @@
       }
     }
 
+    /* Mobile (up to 480px) */
     @media (max-width: 480px) {
-      h1 {
-        font-size: 20px;
-      }
-      .section h2 {
-        font-size: 18px;
-      }
       .nav {
-        grid-template-columns: repeat(2, 1fr); /* force 2 columns for small screens */
-      }
-      li {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      li span {
-        margin-left: 0;
-        margin-top: 3px;
+        grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
       }
     }
   </style>
