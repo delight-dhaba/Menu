@@ -7,53 +7,70 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #fdfdfd;
+      background: #fafafa;
       color: #333;
       line-height: 1.6;
     }
     h1 {
       text-align: center;
-      color: #d9534f;
+      color: #fff;
       padding: 20px 10px;
       margin: 0;
-      background: #fff;
-      border-bottom: 2px solid #eee;
+      background: #5cb85c;
+      font-size: 28px;
+      letter-spacing: 1px;
     }
     /* Sticky navigation */
     .nav {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: #f8f8f8;
-      padding: 10px;
+      background: #fff;
+      padding: 12px;
       text-align: center;
-      border-bottom: 2px solid #ddd;
+      border-bottom: 2px solid #eee;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     .nav a {
-      margin: 0 8px;
+      margin: 0 10px;
       text-decoration: none;
-      color: #337ab7;
+      color: #000000;
       font-weight: bold;
+      font-size: 15px;
+      transition: color 0.3s;
     }
     .nav a:hover {
-      color: #d9534f;
-    }
-    h2 {
       color: #5cb85c;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-      margin: 40px 15px 10px;
+    }
+    /* Category section styling */
+    .section {
+      background: #fff;
+      margin: 25px auto;
+      padding: 20px;
+      max-width: 700px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .section h2 {
+      color: #5cb85c;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 6px;
+      margin-top: 0;
     }
     ul {
       list-style: none;
-      padding: 0 20px;
+      padding: 0;
       margin: 0;
     }
     li {
       display: flex;
       justify-content: space-between;
-      padding: 6px 0;
+      padding: 8px 0;
       border-bottom: 1px dotted #ccc;
+      transition: background 0.2s;
+    }
+    li:hover {
+      background: #f9f9f9;
     }
     li span {
       font-weight: bold;
@@ -75,92 +92,106 @@
     <a href="#desserts">Desserts</a>
   </div>
 
-  <h2 id="beards">Beards</h2>
-  <ul>
-    <li>Pulka <span>08</span></li>
-    <li>Aloo Parota <span>35</span></li>
-    <li>Sada Parota <span>35</span></li>
-    <li>Methi Parota <span>40</span></li>
-    <li>Gobi Parota <span>40</span></li>
-    <li>Papad <span>20</span></li>
-    <li>Masala Papad <span>35</span></li>
-  </ul>
+  <div class="section" id="beards">
+    <h2>Beards</h2>
+    <ul>
+      <li>Pulka <span>08</span></li>
+      <li>Aloo Parota <span>35</span></li>
+      <li>Sada Parota <span>35</span></li>
+      <li>Methi Parota <span>40</span></li>
+      <li>Gobi Parota <span>40</span></li>
+      <li>Papad <span>20</span></li>
+      <li>Masala Papad <span>35</span></li>
+    </ul>
+  </div>
 
-  <h2 id="veg-curries">Veg Curries</h2>
-  <ul>
-    <li>Palak <span>90</span></li>
-    <li>Dal <span>90</span></li>
-    <li>Dal Makhani <span>110</span></li>
-    <li>Aloo Batani <span>90</span></li>
-    <li>Kadi Pokodi <span>90</span></li>
-    <li>Tomato Curry <span>90</span></li>
-    <li>All Mixture <span>170</span></li>
-    <li>Chana Masala <span>150</span></li>
-    <li>Mushroom Curry <span>170</span></li>
-    <li>Malai Kofta <span>170</span></li>
-    <li>Gobi Masala <span>150</span></li>
-    <li>Capsicum Curry <span>150</span></li>
-  </ul>
+  <div class="section" id="veg-curries">
+    <h2>Veg Curries</h2>
+    <ul>
+      <li>Palak <span>90</span></li>
+      <li>Dal <span>90</span></li>
+      <li>Dal Makhani <span>110</span></li>
+      <li>Aloo Batani <span>90</span></li>
+      <li>Kadi Pokodi <span>90</span></li>
+      <li>Tomato Curry <span>90</span></li>
+      <li>All Mixture <span>170</span></li>
+      <li>Chana Masala <span>150</span></li>
+      <li>Mushroom Curry <span>170</span></li>
+      <li>Malai Kofta <span>170</span></li>
+      <li>Gobi Masala <span>150</span></li>
+      <li>Capsicum Curry <span>150</span></li>
+    </ul>
+  </div>
 
-  <h2 id="kaju-items">Kaju Items</h2>
-  <ul>
-    <li>Kaju Tomato <span>170</span></li>
-    <li>Kaju Tomato SP <span>190</span></li>
-    <li>Kaju Paneer <span>190</span></li>
-    <li>Kaju Palak <span>150</span></li>
-    <li>Kaju Mushroom <span>190</span></li>
-    <li>Kaju Chana Masala <span>170</span></li>
-    <li>Kaju Malai Kofta <span>190</span></li>
-    <li>Kaju Gobi Masala <span>190</span></li>
-    <li>Kaju Capsicum <span>170</span></li>
-  </ul>
+  <div class="section" id="kaju-items">
+    <h2>Kaju Items</h2>
+    <ul>
+      <li>Kaju Tomato <span>170</span></li>
+      <li>Kaju Tomato SP <span>190</span></li>
+      <li>Kaju Paneer <span>190</span></li>
+      <li>Kaju Palak <span>150</span></li>
+      <li>Kaju Mushroom <span>190</span></li>
+      <li>Kaju Chana Masala <span>170</span></li>
+      <li>Kaju Malai Kofta <span>190</span></li>
+      <li>Kaju Gobi Masala <span>190</span></li>
+      <li>Kaju Capsicum <span>170</span></li>
+    </ul>
+  </div>
 
-  <h2 id="paneer-items">Paneer Items</h2>
-  <ul>
-    <li>Palak Paneer <span>110</span></li>
-    <li>Palak Paneer SP <span>140</span></li>
-    <li>Paneer Butter Masala <span>170</span></li>
-    <li>Paneer Butter Masala SP <span>190</span></li>
-    <li>Methi Chaman <span>170</span></li>
-    <li>Methi Chaman SP <span>190</span></li>
-    <li>Paneer Mushroom <span>190</span></li>
-    <li>Paneer Chana Masala <span>170</span></li>
-    <li>Paneer Malai Kofta <span>190</span></li>
-    <li>Paneer Gobi <span>190</span></li>
-    <li>Paneer Capsicum <span>180</span></li>
-  </ul>
+  <div class="section" id="paneer-items">
+    <h2>Paneer Items</h2>
+    <ul>
+      <li>Palak Paneer <span>110</span></li>
+      <li>Palak Paneer SP <span>140</span></li>
+      <li>Paneer Butter Masala <span>170</span></li>
+      <li>Paneer Butter Masala SP <span>190</span></li>
+      <li>Methi Chaman <span>170</span></li>
+      <li>Methi Chaman SP <span>190</span></li>
+      <li>Paneer Mushroom <span>190</span></li>
+      <li>Paneer Chana Masala <span>170</span></li>
+      <li>Paneer Malai Kofta <span>190</span></li>
+      <li>Paneer Gobi <span>190</span></li>
+      <li>Paneer Capsicum <span>180</span></li>
+    </ul>
+  </div>
 
-  <h2 id="anda-items">Anda (Egg) Items</h2>
-  <ul>
-    <li>Anda Palak <span>110</span></li>
-    <li>Anda Palak SP <span>140</span></li>
-    <li>Anda Bhurji <span>110</span></li>
-    <li>Anda Masala <span>140</span></li>
-    <li>Anda Dal <span>140</span></li>
-    <li>Anda Kadi <span>160</span></li>
-    <li>Anda Kadi Paneer <span>190</span></li>
-    <li>Anda Aloo <span>150</span></li>
-    <li>Anda Tomato <span>160</span></li>
-    <li>Anda Mushroom <span>190</span></li>
-    <li>Anda All Mixture <span>190</span></li>
-    <li>Anda Chana Masala <span>180</span></li>
-    <li>Anda Gobi Masala <span>190</span></li>
-    <li>Anda Capsicum <span>170</span></li>
-    <li>Omlet Curry <span>160</span></li>
-    <li>Delight SP <span>200</span></li>
-  </ul>
+  <div class="section" id="anda-items">
+    <h2>Anda (Egg) Items</h2>
+    <ul>
+      <li>Anda Palak <span>110</span></li>
+      <li>Anda Palak SP <span>140</span></li>
+      <li>Anda Bhurji <span>110</span></li>
+      <li>Anda Masala <span>140</span></li>
+      <li>Anda Dal <span>140</span></li>
+      <li>Anda Kadi <span>160</span></li>
+      <li>Anda Kadi Paneer <span>190</span></li>
+      <li>Anda Aloo <span>150</span></li>
+      <li>Anda Tomato <span>160</span></li>
+      <li>Anda Mushroom <span>190</span></li>
+      <li>Anda All Mixture <span>190</span></li>
+      <li>Anda Chana Masala <span>180</span></li>
+      <li>Anda Gobi Masala <span>190</span></li>
+      <li>Anda Capsicum <span>170</span></li>
+      <li>Omlet Curry <span>160</span></li>
+      <li>Delight SP <span>200</span></li>
+    </ul>
+  </div>
 
-  <h2 id="desserts">Desserts / Drinks</h2>
-  <ul>
-    <li>Lassi <span>40</span></li>
-    <li>Kheer <span>100</span></li>
-    <li>Half Kheer <span>50</span></li>
-    <li>Double Ka Meetha <span>100</span></li>
-    <li>Half Double Ka Meetha <span>50</span></li>
-    <li>Gajar Ka Halwa (with Ice Cream) <span>80</span></li>
-    <li>Curd Rice <span>70</span></li>
-    <li>Half Curd <span>30</span></li>
-  </ul>
+  <div class="section" id="desserts">
+    <h2>Desserts</h2>
+    <ul>
+      <li>Lassi <span>40</span></li>
+      <li>Kheer <span>100</span></li>
+      <li>Half Kheer <span>50</span></li>
+      <li>Double Ka Meetha <span>100</span></li>
+      <li>Half Double Ka Meetha <span>50</span></li>
+      <li>Gajar Ka Halwa (with Ice Cream) <span>80</span></li>
+      <li>Curd Rice <span>70</span></li>
+      <li>Half Curd <span>30</span></li>
+      <li>Cool Drinks <span>--</span></li>
+      <li>Ice Creams <span>--</span></li>
+    </ul>
+  </div>
 
 </body>
 </html>
